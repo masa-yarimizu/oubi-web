@@ -9,14 +9,14 @@ oubi-web
 
 まず、vagrantディレクトリでvagrantを立ち上げてください
 
-  '''bash
+  ```bash
   $ vagrant up
-  '''
+  ```
 
 また、ansibleが必要なのでyumとかでinstallしてください。
 インストールできたらansibleディレクトリで以下のコマンドを実行してください
 
-  '''bash
+  ```bash
   $ ansible-playbook -i local web_servers.yml
-  '''
+  ```
 
