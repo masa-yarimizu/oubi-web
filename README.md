@@ -20,3 +20,5 @@ oubi-web
   $ ansible-playbook -i local web_servers.yml
   ```
 実行が終了したらブラウザで http://192.168.33.10/ にアクセスすればwebページが表示されます。
+
+![tiqav](https://img.tiqav.com/5Di.jpg) 
