@@ -1,0 +1,16 @@
+---
+
+#file: roles/go/tasks/main.yml
+
+- name: Go archive Download
+  get_url: url="https://storage.googleapis.com/golang/go1.4.1.linux-amd64.tar.gz" dest=/usr/local/src/go1.4.1.linux-amd64.tar.gz
+
+- name: unzip Go archive
+  unarchive: src=/usr/local/src/go1.4.1.linux-amd64.tar.gz dest=/usr/local copy=no creates=/usr/local/go/bin
+
+- name: Add the Go bin directory to the PATH environment variable for all users
+  copy: src=go-bin.sh dest=/etc/profile.d
+
+- name: Set GOPATH for all users
+  copy: src=go-path.sh dest=/etc/profile.d
+

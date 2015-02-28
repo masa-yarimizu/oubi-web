@@ -1,0 +1,5 @@
+---
+# roles/fluentd/tasks/main.yml
+
+- name: Installing Fluentd From rpm Package
+  shell: curl -L http://toolbelt.treasuredata.com/sh/install-redhat.sh | sh creates=/etc/init.d/td-agent

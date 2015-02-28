@@ -1,0 +1,146 @@
+
+ul.list {
+	list-style-type:none;
+}
+
+#access {
+	background-color: #EEFFFF;
+}
+
+#wrapper {
+	margin:0;
+	padding:0;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+}
+
+#header {
+
+}
+
+#headerLeft {
+	float:left;
+}
+
+#headerCenter {
+	float:left;
+}
+
+#headerRight {
+	margin-right: 20px;
+}
+
+#navi {
+	margin-bottom: 18px;
+}
+
+#navi ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	border-radius: 5px;
+}
+
+#navi li a{
+	display:block;
+	font-weight:bold;
+	float:left;
+	width:159px;
+	height: 40px;
+	color: #FFFFFF;
+	background:-webkit-linear-gradient(#0066CC,#0099FF,#0066CC);
+	text-decoration: none;
+	padding-top:13px;
+	margin-right: 1px;
+}
+#navi li a:hover{
+	background:-webkit-linear-gradient(#696969,#999,#696969);
+
+}
+
+#navi li.clicked a{
+	background:-webkit-linear-gradient(#696969,#999,#696969);
+}
+
+
+#contents {
+	height: 1700px;
+	background-color: #FFFFFF;
+	text-align: left;
+}
+
+#indeximage {
+	margin: 0 auto;
+	width: 960px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#indeximage img {
+	top: 0;
+	left:0;
+	position: absolute;
+}
+
+
+span.largeFont {
+	font-size: 32px;
+	color:#0033FF;
+}
+
+#addressInfo {
+	border-bottom: 3px solid #CC3399;
+	margin-left: 50px;
+	width:800px;
+	padding-bottom: 20px;
+}
+
+#addressInfo h2 {
+
+	color:#00CCFF;
+	border-bottom: 1px solid #000;
+}
+
+#addressInfo p {
+	margin:5px;
+}
+
+#accessInfo h3 {
+	color:#FF9900;
+	margin-left: 50px;
+
+}
+
+
+#accessInfo h2 {
+	color:#00CCFF;
+	width:800px;
+	margin-left: 50px;
+}
+
+.station {
+	clear:both;
+}
+
+.station p {
+	float: left;
+	width: 300px;
+	margin: 10px;
+	margin-left: 50px;
+}
+
+.googleMap {
+	margin-left: 50px;
+	width:800px;
+}
+
+#footer {
+	margin-top: 10px;
+	color: #FFFFFF;
+	background-color: #333333;
+	height: 50px;
+}

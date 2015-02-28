@@ -1,0 +1,11 @@
+---
+# file: local
+
+[api_servers]
+127.0.0.1
+
+[web_servers]
+
+[local:children]
+api_servers
+web_servers

@@ -1,0 +1,21 @@
+---
+# file: roles/common/tasks/main.yml
+
+- name: be sure common packages are installed
+  yum: name={{ item }} state=latest
+  with_items:
+    - vim
+    - wget
+    - git
+
+- name: make
+  file: dest=/var/www/html state=directory
+
+- name: make symbolic link
+  file: src=/vagrant dest=/var/www/html state=link force=yes
+
+- name: cut firewall
+  service: name=iptables state=stopped
+
+- name: stop reloading iptables
+  service: name=iptables enabled=no
